@@ -1,0 +1,35 @@
+# Local financial data. data/README.md is intentionally tracked as a guide.
+/data/*
+!/data/README.md
+
+# Statements and source documents must never be committed.
+*.pdf
+
+# Local credentials and machine-specific configuration.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets/
+config.local.*
+
+# Local databases and their SQLite journal files.
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+
+# Logs and generated Go artifacts.
+*.log
+bin/
+coverage.out
+*.test
+
+# OS and editor files.
+.DS_Store
+.idea/
+.vscode/
